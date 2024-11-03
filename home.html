@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contact.css">
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div id="logo" class="logo" style="font-size: 45px;">Image Slider</div>
+        <div class="navbar-center">
+            <input type="text" placeholder="Search...">
+            <span class="search-icon material-symbols-outlined" style="color: black;">search</span>
+
+        </div>
+
+        <div class="head-right">
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#" onclick="openLoginForm()">Login</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="log-cont" id="log-cont">
+
+        <div class="form-card front">
+            <span class="close" onclick="closeLoginForm()">&times;</span>
+            <form action="#">
+                <h1 class="logh1">Login</h1>
+                <div class="inputbox">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email" name="" id="" required>
+                    <label for="">Email:</label>
+                </div>
+
+                <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" name="" id="" required>
+                    <label for="">Password:</label>
+                </div>
+                <div class="forget">
+                    <label for="">
+                        <input type="checkbox">Remember me
+                    </label>
+                    <label for="">
+                        Forget Password
+                    </label>
+                </div>
+                <button class="log">Login</button>
+                <div class="register">
+                    <p>Don't have an account ? <button type="button" class="switch" id="showSignUp">Sign Up</button></p>
+
+                </div>
+            </form>
+        </div>
+        <div class="form-card back">
+            <span class="close" onclick="closeLoginForm()">&times;</span>
+            <form action="#">
+                <h1 class="logh1" style="margin-top: 50px;">Sign Up</h1>
+                <div class="inputbox">
+                    <input type="text" name="" required>
+                    <label for="">Name:</label>
+
+                </div>
+                <div class="inputbox">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email" name="" id="" required>
+                    <label for="">Email:</label>
+                </div>
+
+                <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" name="" id="" required>
+                    <label for="">Password:</label>
+                </div>
+                <button class="log">Sign Up</button>
+                <div class="register">
+                    <p>Already have an account? <button type="button" class="switch" id="showLogin">Login</button></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <section class="parallax">
+        <h1 id="title">Photo Gallery</h1>
+        <img src="images/bg.png" style="background-position: 
+        center; margin-bottom: 100px;  " id="cover" alt="cover" />
+        <img src="images/left.png" style="width: 500px;" id="left" alt="second" />
+        <img src="images/right.png" style="width: 500px; position: relative; left: 30%;margin-top:200px;" id="right" alt="third" />
+    </section>
+
+    <section class="blog">
+        <h2>Welcome to Our Gallery!</h2>
+        <p>
+            Explore the art within. Each piece is a journey waiting to be discovered ✨
+            <p>
+                <p>
+                    Step into Our Gallery! Immerse yourself in a world of creativity, where every piece tells a story. From vibrant colors to thought-provoking compositions, let our collection inspire and captivate your imagination. 🎨🖌️
+                </p>
+
+                <div class="cat-name">
+                    <h1>Flowers</h1>
+                    <a href="#"> &#11162;</a>
+                </div>
+                <div class="cat-container">
+                    <div class="item">
+                        <img src="images/ball.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="images/street.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cat-name">
+                    <h1>Flowers</h1>
+                    <a href="#"> &#11162;</a>
+                </div>
+                <div class="cat-container">
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cat-name">
+                    <h1>Flowers</h1>
+                    <a href="#"> &#11162;</a>
+                </div>
+                <div class="cat-container">
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="cat-name">
+                    <h1>Flowers</h1>
+                    <a href="#"> &#11162;</a>
+                </div>
+
+                <div class="cat-container">
+
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img3.jpg" alt="">
+                    </div>
+                </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="colm">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-description">We'd love to hear from you.</p>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <span>Address:</span>
+                            <span>SRKR Engineering college, 534204</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span>Phone:</span>
+                            <span>+91 1234567890</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span>Email :</span>
+                            <span><a href="mailto:imageslider@gmail.com">imageslider@gmail.com</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-icons">
+                    <h2 class="section-title">Stay Connected</h2>
+                    <div class="social-container">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-google"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ImageSlider. All rights reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js "></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js "></script>
+    <script>
+        let split = new SplitText("#title ");
+
+        gsap.from("#cover", {
+            scrollTrigger: {
+                scrub: true,
+            },
+            y: 80,
+        });
+
+        gsap.from("#left", {
+            scrollTrigger: {
+                scrub: true,
+            },
+            x: -150,
+        });
+
+        gsap.from("#right", {
+            scrollTrigger: {
+                scrub: true,
+            },
+            x: 200,
+        });
+
+        const container = document.getElementById("log-cont");
+        const showSignUp = document.getElementById("showSignUp");
+        const showLogin = document.getElementById("showLogin");
+
+        showSignUp.addEventListener("click", () => {
+            container.classList.add("flip");
+        });
+
+        showLogin.addEventListener("click", () => {
+            container.classList.remove("flip");
+        });
+
+        function openLoginForm() {
+            document.getElementById("log-cont").style.display = "block";
+        }
+
+        function closeLoginForm() {
+            document.getElementById("log-cont").style.display = "none";
+        }
+
+        // Close the modal when clicking outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById("log-cont");
+            if (event.target === modal) {
+
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
